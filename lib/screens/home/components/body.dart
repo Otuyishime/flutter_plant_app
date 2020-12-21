@@ -1,5 +1,8 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+
 import 'body_with_searchbox.dart';
+import 'title_with_more_button.dart';
 
 class Body extends StatelessWidget {
   @override
@@ -9,6 +12,7 @@ class Body extends StatelessWidget {
       child: Column(
         children: [
           HeaderWithSearchBox(screenHeightAndWidth: screenHeightAndWidth),
+          TitleWithMoreButton(title: "Recommended", onPressHandler: (){},),
         ],
       ),
     );
